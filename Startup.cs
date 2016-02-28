@@ -38,7 +38,7 @@ namespace codylab
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Pages/Error");
             }
 
             app.UseIISPlatformHandler();
