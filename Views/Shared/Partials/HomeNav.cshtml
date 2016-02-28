@@ -1,0 +1,20 @@
+﻿<header class="trans">
+    <div class="hwrap">
+        <a asp-controller="Pages" asp-action="Index" class="header-logo">
+            <img src="/images/logo.png" alt="">
+        </a>
+
+        <nav>
+            <a href="" ng-click="vm.gotoWorks()">{{ trans('nav.works') }}</a>
+            <a href="{{ URL::route('services') }}">{{ trans('nav.services') }}</a>
+            <a href="{{ URL::route('about') }}">{{ trans('nav.about') }}</a>
+            <a href="{{ URL::route('contact') }}">{{ trans('nav.contact') }}</a>
+        </nav>
+    </div>
+
+    <div id="burger">
+        <div class="x"></div>
+        <div class="y" style="display: block;"></div>
+        <div class="z"></div>
+    </div>
+</header>

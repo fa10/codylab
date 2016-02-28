@@ -1,0 +1,214 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 940;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+
+  &.trans {
+
+    nav {
+      a {color:white;}
+    }
+
+    div.x,
+    div.y,
+    div.z {
+      background: white;
+    }
+  }
+
+  &.fixed {
+    background: rgba(255,255,255,0.95);
+
+    .hwrap {
+      margin:20px 70px 0;
+      padding-bottom: 20px;
+    }
+  }
+
+  nav{
+    position: absolute;
+    right: 0;
+    top: 8px;
+
+    a{
+      color: #3a4046;
+      font-size: 15px;
+      font-weight:600;
+      margin-left: 25px;
+      transition: all .2s;
+      padding: 7px 15px;
+      display: block;
+      float: left;
+
+      &:hover {
+        color:#67C7AD;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .header-logo {
+    width: 128px;
+    height: 48px;
+    display: block;
+    text-indent: -9999em;
+    overflow: hidden;
+
+    > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+  }
+
+  .hwrap {
+    position: relative;
+    margin:35px 70px 0;
+    padding-bottom: 30px;
+    -webkit-transition: margin-top 300ms ease-in-out;
+    transition: margin-top 300ms ease-in-out;
+  }
+
+  #burger {
+    display:none;
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    top: 11px;
+    cursor: pointer;
+  }
+
+  div.x,
+  div.y,
+  div.z {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background: #3A4046;
+    border-radius:2px;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+  }
+
+  div.x, div.y, div.z {
+    height: 3px;
+    width: 26px;
+  }
+
+  div.y{
+    top: 18px;
+  }
+
+  div.z{
+    top: 37px;
+  }
+
+  div.collapse{
+    display: block;
+    top: 20px;
+    -webkit-transition: all 70ms ease-out;
+    -moz-transition: all 70ms ease-out;
+    -ms-transition: all 70ms ease-out;
+    -o-transition: all 70ms ease-out;
+    transition: all 70ms ease-out;
+  }
+
+  div.rotate30{
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -webkit-transition: all 50ms ease-out;
+    -moz-transition: all 50ms ease-out;
+    -ms-transition: all 50ms ease-out;
+    -o-transition: all 50ms ease-out;
+    transition: all 50ms ease-out;
+  }
+
+  div.rotate150{
+    -ms-transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+    -webkit-transition: all 50ms ease-out;
+    -moz-transition: all 50ms ease-out;
+    -ms-transition: all 50ms ease-out;
+    -o-transition: all 50ms ease-out;
+    transition: all 50ms ease-out;
+  }
+
+  div.rotate45{
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+  }
+
+  div.rotate135{
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-transition: all 100ms ease-out;
+    -moz-transition: all 100ms ease-out;
+    -ms-transition: all 100ms ease-out;
+    -o-transition: all 100ms ease-out;
+    transition: all 100ms ease-out;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+
+  header {
+    nav{
+      display: none;
+    }
+
+    &.fixed {
+
+      .hwrap {
+        margin:20px 20px 0;
+        padding-bottom: 20px;
+      }
+
+      #burger {
+        display: block;
+        top: 25px;
+        right: 20px;
+      }
+    }
+
+    .hwrap{
+      margin: 35px 35px 0;
+    }
+
+    #burger {
+      display: block;
+      top: 40px;
+      right:20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    nav{
+      display: none;
+    }
+
+    .hwrap{
+      margin: 35px 20px 0;
+    }
+  }
+}
+

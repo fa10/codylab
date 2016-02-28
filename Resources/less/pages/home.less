@@ -1,0 +1,61 @@
+#home {
+  header {
+    position: absolute;
+  }
+
+  #res-nav {
+    position: absolute;
+
+    span {
+      background:white;
+    }
+  }
+
+  #introduction {
+    position: relative !important;
+    min-height: 100%;
+
+    .content_box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .hs-line-6 {
+      position: relative;
+      font-size: 20px;
+      font-weight:600;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      color: white;
+      letter-spacing: 0.2em;
+      text-transform: lowercase;
+    }
+
+    .hs-line-7 {
+      margin-top: 0;
+      position: relative;
+      font-size: 54px;
+      font-weight:bold;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      line-height: 1.2;
+      color: white;
+      text-transform: lowercase;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #home{
+    #introduction{
+      .hs-line-7 {
+        font-size: 34px!important;
+      }
+    }
+  }
+}
+

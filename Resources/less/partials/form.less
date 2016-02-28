@@ -1,0 +1,52 @@
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.form-group {
+  label {
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+
+  &.has-error {
+    .form-control {
+      border-color: #F16162;
+      &:focus {
+        border-color: #F16162;
+        box-shadow: 0 1px 1px rgba(187, 48, 48, 0.075), 0 0 1px #F16162;
+      }
+    }
+  }
+
+
+
+  .error-message {
+    color: #f16162 !important;
+    font-size: 16px !important;
+    margin: 5px 0 0;
+    cursor: pointer;
+  }
+
+
+}
+
+.form-control {
+  border-radius: 2px;
+  box-shadow: none;
+
+  &::-webkit-input-placeholder{
+    color:#666;
+  }
+
+  &:focus{
+    border-color: inherit;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.input-xl {
+  height:62px;
+  font-size:22px;
+}

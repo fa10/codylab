@@ -1,0 +1,84 @@
+.btn {
+  display: inline-block;
+  border-radius: 0.25em;
+  padding: 1em 2em;
+  font-size: 14px;
+  font-weight:600;
+  text-transform: lowercase;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+
+  &.grey-dark {
+    background: #383838;
+    color: #fff;
+
+    &:focus {
+      outline: none !important;
+      outline: none !important;
+      outline-offset: 0 !important;
+    }
+
+    &:active:focus{
+      transform: scale(0.95);
+      outline: none;
+      outline: none;
+      outline-offset: 0;
+      box-shadow: none;
+    }
+
+    &:hover{
+      background-color: #454545;
+    }
+
+  }
+
+  &.btn-blue {
+
+    &:focus {
+      outline: none !important;
+      outline: none !important;
+      outline-offset: 0 !important;
+    }
+
+    &:active:focus{
+      transform: scale(0.95);
+      outline: none;
+      outline: none;
+      outline-offset: 0;
+      box-shadow: none;
+    }
+
+    color:white;
+    background:#81CFCB;
+  }
+
+  &.btn-cancel {
+    color:white;
+    background: #FC4349;
+  }
+  
+  &.btn-red {
+    color: white;
+    background: @brand-second;
+  }
+
+  &.btn-white {
+    color: white;
+    border: 2px solid white;
+    border-radius: 0;
+
+    &:hover {
+      background: #fff;
+      color: #222;
+    }
+  }
+
+}
+
+.sbtn {
+  padding: 5px 15px !important;
+}
